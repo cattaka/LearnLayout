@@ -19,6 +19,7 @@
         <activity android:name=".MultiScrollActivity" />
         <activity android:name=".PullToRefleshActivity" />
         <activity android:name=".HeaderListActivity" />
+        <activity android:name=".ViewPagerActivity" />
     </application>
 
 </manifest>
