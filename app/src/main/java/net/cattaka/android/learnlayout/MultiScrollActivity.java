@@ -28,6 +28,8 @@ public class MultiScrollActivity extends Activity implements MyScrollView.OnScro
         mScrollView.setOnScrollChangedListener(this);
 
         mHeaderView.bringToFront();
+
+        getActionBar().hide();
     }
 
     @Override

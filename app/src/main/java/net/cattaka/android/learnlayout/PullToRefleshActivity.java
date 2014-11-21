@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,9 +45,19 @@ public class PullToRefleshActivity extends Activity implements SwipeRefreshLayou
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mItems);
         mListView.setAdapter(adapter);
         {
-            int h = getActionBar().getHeight();
+            int actionBarHeight;
+            {
+                TypedValue tv = new TypedValue();
+                if (getTheme().resolveAttribute(android.R.attr.actionBarSize, tv, true))
+                {
+                    actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data,getResources().getDisplayMetrics());
+                } else {
+                    // Error case
+                    actionBarHeight = (int) (48 * getResources().getDisplayMetrics().density);
+                }
+            }
             TextView view = new TextView(this);
-            view.setLayoutParams(new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, h));
+            view.setLayoutParams(new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, actionBarHeight));
             mListView.addHeaderView(view);
         }
 

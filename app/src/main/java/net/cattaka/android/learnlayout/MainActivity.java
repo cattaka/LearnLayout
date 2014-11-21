@@ -45,6 +45,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         mListView = (ListView) findViewById(R.id.listView);
         mListView.setOnItemClickListener(this);
         items.add(new ButtonItem("MultiScroll", MultiScrollActivity.class));
+        items.add(new ButtonItem("FadeInActionBar", FadeInActionBarActivity.class));
         items.add(new ButtonItem("PullToReflesh", PullToRefleshActivity.class));
         items.add(new ButtonItem("HeaderList", HeaderListActivity.class));
         items.add(new ButtonItem("ViewPager", ViewPagerActivity.class));
