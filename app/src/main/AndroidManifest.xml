@@ -23,6 +23,7 @@
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".RippleEffectActivity" />
+        <activity android:name=".CardviewActivity" />
     </application>
 
 </manifest>

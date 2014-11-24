@@ -51,6 +51,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         items.add(new ButtonItem("ViewPager", ViewPagerActivity.class));
         items.add(new ButtonItem("RecyclerView", RecyclerViewActivity.class));
         items.add(new ButtonItem("RippleEffect", RippleEffectActivity.class));
+        items.add(new ButtonItem("Cardview", CardviewActivity.class));
 
         ArrayAdapter<ButtonItem> adapter = new ArrayAdapter<ButtonItem>(this, android.R.layout.simple_list_item_1, items);
         mListView.setAdapter(adapter);
