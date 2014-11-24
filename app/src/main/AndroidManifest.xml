@@ -22,6 +22,7 @@
         <activity android:name=".HeaderListActivity" />
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".RippleEffectActivity" />
     </application>
 
 </manifest>
