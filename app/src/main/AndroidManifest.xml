@@ -24,6 +24,7 @@
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".RippleEffectActivity" />
         <activity android:name=".CardviewActivity" />
+        <activity android:name=".GridlayoutActivity" />
     </application>
 
 </manifest>
