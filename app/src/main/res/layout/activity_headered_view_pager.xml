@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.cattaka.android.learnlayout.view.FoldableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a header"
+        android:gravity="center"
+        android:padding="32dp"
+        android:background="@android:color/darker_gray"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark" />
+    </android.support.v4.view.ViewPager>
+</net.cattaka.android.learnlayout.view.FoldableLayout>

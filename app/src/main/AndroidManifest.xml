@@ -26,6 +26,7 @@
         <activity android:name=".CardviewActivity" />
         <activity android:name=".GridlayoutActivity" />
         <activity android:name=".CustomActionBarActivity" />
+        <activity android:name=".HeaderedViewPagerActivity" />
     </application>
 
 </manifest>

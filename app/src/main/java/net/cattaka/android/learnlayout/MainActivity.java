@@ -54,6 +54,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         items.add(new ButtonItem("Cardview", CardviewActivity.class));
         items.add(new ButtonItem("Gridlayout", GridlayoutActivity.class));
         items.add(new ButtonItem("CustomActionBar", CustomActionBarActivity.class));
+        items.add(new ButtonItem("HeaderedViewPager", HeaderedViewPagerActivity.class));
 
         ArrayAdapter<ButtonItem> adapter = new ArrayAdapter<ButtonItem>(this, android.R.layout.simple_list_item_1, items);
         mListView.setAdapter(adapter);
