@@ -13,7 +13,6 @@ import net.cattaka.android.learnlayout.fragment.MyListFragment;
  * Created by cattaka on 14/11/19.
  */
 public class HeaderedViewPagerActivity extends FragmentActivity {
-    private TextView mHeader;
     private ViewPager mViewPager;
 
     @Override
@@ -21,7 +20,6 @@ public class HeaderedViewPagerActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_headered_view_pager);
 
-        mHeader = (TextView) findViewById(R.id.headerView);
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
 
         {   // Creating adapter of fragments

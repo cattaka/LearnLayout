@@ -8,13 +8,21 @@
     >
 
     <TextView
-        android:id="@id/headerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is a header"
+        android:text="This is first header"
         android:gravity="center"
         android:padding="32dp"
         android:background="@android:color/darker_gray"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is second header"
+        android:gravity="center"
+        android:padding="32dp"
+        android:background="@android:color/background_light"
         android:textAppearance="?android:textAppearanceLarge"/>
 
     <android.support.v4.view.ViewPager
